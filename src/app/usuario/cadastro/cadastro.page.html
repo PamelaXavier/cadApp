@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar color="tertiary"> 
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Todas as informações são obrigatórias</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+      <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">CPF</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-label>Data de nascimento</ion-label>
+          </ion-row>
+          <ion-row>
+            <ion-datetime  displayFormat="DD/MMM/YYYY"></ion-datetime>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+      <ion-item>
+      
+              <ion-grid>
+                <ion-row>
+                  <ion-label>Gênero</ion-label>
+                </ion-row>
+
+                <ion-row>
+                  <ion-col>
+                    <ion-label>F</ion-label>
+                    <ion-checkbox checked="false"></ion-checkbox>
+                  </ion-col>
+
+                  <ion-col>
+                    <ion-label>M</ion-label>
+                    <ion-checkbox checked="false"></ion-checkbox>
+                  </ion-col>
+                </ion-row>
+              
+              </ion-grid>
+      </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Celular</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+       
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="floating">Confirmar senha</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+      </ion-list>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button routerLink="/home">Voltar</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button >Salvar</ion-button>
+          </ion-col>
+        </ion-row>
+     </ion-grid>
+
+    </ion-card-content>
+    
+  </ion-card>
+</ion-content>
